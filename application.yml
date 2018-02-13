@@ -1,6 +1,17 @@
 info:
   foo: initial-from-yml
 
+data-loader:
+  running: true
+  threads: 5
+  sqs: sqs-test-queue
+  s3: sqad-vendor-data
+  efs: /media/efs/
+  es: [localhost]
+  esSniff: false
+  loadRandom: false
+  enableLogging: true
+
 
 ---
 spring:
@@ -9,3 +20,13 @@ spring:
 info:
   foo: initial-dev-yml
 
+data-loader:
+  running: false
+  threads: 50
+  sqs: sqs-dev-queue
+  s3: sqad-vendor-data
+  efs: /media/efs/
+  es: [10.1.9.15]
+  esSniff: false
+  loadRandom: false
+  enableLogging: true
