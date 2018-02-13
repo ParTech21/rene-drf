@@ -1,2 +1,9 @@
 info:
   foo: initial-from-yml
+
+
+---
+
+info:
+  foo: initial-dev-yml
+
