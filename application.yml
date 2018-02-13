@@ -3,6 +3,8 @@ info:
 
 
 ---
+spring:
+  profiles: dev
 
 info:
   foo: initial-dev-yml
