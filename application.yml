@@ -7,7 +7,7 @@ data-loader:
   sqs: sqs-test-queue
   s3: sqad-vendor-data
   efs: /media/efs/
-  es: [localhost]
+  es: localhost
   esSniff: false
   loadRandom: false
   enableLogging: true
@@ -26,7 +26,7 @@ data-loader:
   sqs: sqs-dev-queue
   s3: sqad-vendor-data
   efs: /media/efs/
-  es: [10.1.9.15]
+  es: 10.1.9.15,10.1.9.16
   esSniff: false
   loadRandom: false
   enableLogging: true
