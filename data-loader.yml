@@ -1,12 +1,9 @@
-info:
-  foo: initial-from-yml
-
 data-loader:
   running: true
   threads: 5
-  sqs: sqs-test-queue
-  s3: sqad-vendor-data
-  efs: /media/efs/
+  sqs: data-loader-default-queue
+  s3: data-loader-default-s3
+  efs: /data/loader/default
   es: localhost
   esSniff: false
   loadRandom: false
@@ -17,15 +14,12 @@ data-loader:
 spring:
   profiles: dev
 
-info:
-  foo: initial-dev-yml
-
 data-loader:
   running: false
   threads: 50
-  sqs: sqs-dev-queue
-  s3: sqad-vendor-data
-  efs: /media/efs/
+  sqs: data-loader-dev-quque
+  s3: data-loader-dev-s3
+  efs: /data/loader/dev/
   es: 10.1.9.15,10.1.9.21
   esSniff: false
   loadRandom: false
