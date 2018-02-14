@@ -1,8 +1,8 @@
 rene-drf:
   running: true
   threads: 5
-  sqs: drf-test-queue-default
-  s3: drf-vendor-data-default
+  sqs: drf-default-queue
+  s3: drf-default-s3
   efs: /media/drf/
   es: localhost
   esSniff: false
@@ -17,8 +17,8 @@ spring:
 rene-drf:
   running: false
   threads: 50
-  sqs: sqs-dev-queue-dev
-  s3: sqad-vendor-data-dev
+  sqs: drf-dev-queue
+  s3: drf-dev-s3
   efs: /media/efs/
   es: 10.1.9.15,10.1.9.21
   esSniff: false
