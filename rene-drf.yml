@@ -1,0 +1,26 @@
+rene-drf:
+  running: true
+  threads: 5
+  sqs: drf-test-queue-default
+  s3: drf-vendor-data-default
+  efs: /media/drf/
+  es: localhost
+  esSniff: false
+  loadRandom: false
+  enableLogging: true
+
+
+---
+spring:
+  profiles: dev
+
+rene-drf:
+  running: false
+  threads: 50
+  sqs: sqs-dev-queue-dev
+  s3: sqad-vendor-data-dev
+  efs: /media/efs/
+  es: 10.1.9.15,10.1.9.21
+  esSniff: false
+  loadRandom: false
+  enableLogging: true
